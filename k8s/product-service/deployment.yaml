@@ -6,7 +6,7 @@ metadata:
   labels:
     app: product-service
 spec:
-  replicas: 2
+  replicas: 1  # Reducido a 1 para desarrollo y cuentas estudiante
   selector:
     matchLabels:
       app: product-service
