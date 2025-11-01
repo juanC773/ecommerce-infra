@@ -7,6 +7,8 @@ metadata:
     app: service-discovery
 spec:
   replicas: 1
+  strategy:
+    type: Recreate  # Evita problemas de recursos al actualizar en dev
   selector:
     matchLabels:
       app: service-discovery
