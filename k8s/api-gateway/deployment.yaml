@@ -29,10 +29,10 @@ spec:
             name: api-gateway-config
         resources:
           requests:
-            memory: "512Mi"
-            cpu: "250m"
+            memory: "256Mi"  # Optimizado para desarrollo
+            cpu: "100m"      # Optimizado para desarrollo
           limits:
-            memory: "1Gi"
+            memory: "512Mi"
             cpu: "500m"
         livenessProbe:
           httpGet:
