@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: cloud-config
-        image: juanc7773/cloud-config:dev-latest  # Usa última imagen construida por pipeline
+        image: <REGISTRY>/cloud-config:0.1.0  # Reemplazado por pipeline según rama
         imagePullPolicy: Always
         ports:
         - containerPort: 9296

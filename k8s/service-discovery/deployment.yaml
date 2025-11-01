@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: service-discovery
-        image: juanc7773/service-discovery:dev-latest  # Usa última imagen construida por pipeline
+        image: <REGISTRY>/service-discovery:0.1.0  # Reemplazado por pipeline según rama
         imagePullPolicy: Always
         ports:
         - containerPort: 8761
