@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: cloud-config
-        image: <REGISTRY>/cloud-config:0.1.0
+        image: juanc7773/cloud-config:0.1.0
         imagePullPolicy: Always
         ports:
         - containerPort: 9296
