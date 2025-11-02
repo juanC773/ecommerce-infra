@@ -9,4 +9,7 @@ data:
   SPRING_PROFILES_ACTIVE: "dev"
   SPRING_ZIPKIN_BASE_URL: "http://zipkin.ecommerce-dev.svc.cluster.local:9411/"
   CLIENT_HOST: "http://localhost:4200"
+  # Configuración Eureka para Kubernetes: usar IP del pod en lugar de localhost
+  EUREKA_INSTANCE_PREFER_IP_ADDRESS: "true"
+  EUREKA_INSTANCE_HOSTNAME: "api-gateway.ecommerce-dev.svc.cluster.local"
 
